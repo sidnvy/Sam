@@ -19,8 +19,10 @@ group :production do
 	gem 'pg','0.15.1'
 end
 
-# Use SCSS for stylesheets
+# Use SCSS for stylesheets and bootstrap-sass
 gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass','2.3.2.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
