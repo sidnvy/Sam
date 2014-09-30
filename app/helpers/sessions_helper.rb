@@ -19,6 +19,13 @@ module SessionsHelper
 		@current_user ||= User.find_by(remember_token: hashed_token )
 	end
 
+	def signed_in_user 
+		unless sign_in?
+			store_location
+			redirect_to signin_url,notice: "Please sign in."
+		end
+	end
+
 	def sign_out
 		current_user.update_attribute(:remember_token, User.hash(User.generate_token) )
 		self.current_user = nil
