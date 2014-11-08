@@ -23,6 +23,6 @@ test:
 production:
   adapter: postgresql
   database: db/production
-  username: postgresql
+  username: postgres
   password: fanfan
   
