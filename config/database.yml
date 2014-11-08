@@ -25,4 +25,5 @@ production:
   database: db/production
   username: ror
   password: railsrails
+  host: localhost
   
