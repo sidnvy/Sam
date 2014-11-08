@@ -23,6 +23,6 @@ test:
 production:
   adapter: postgresql
   database: db/production
-  username: postgres
-  password: fanfan
+  username: ror
+  password: railsrails
   
